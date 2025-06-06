@@ -43,7 +43,7 @@ main {
   padding: 10px;
 }
 
-.curiosidade {
+.curiosidades {
   background-color: rgb(137, 40, 194);
   margin-bottom: 20px;
   padding: 15px;
@@ -52,7 +52,7 @@ main {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.curiosidade h2 {
+.curiosidades h2 {
   margin-bottom: 10px;
   color: #0077cc;
 }
