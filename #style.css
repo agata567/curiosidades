@@ -8,13 +8,13 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #ce3f3f;
   color: #333;
 }
 
 header {
   background-color: #0077cc;
-  color: white;
+  color: rgb(30, 180, 30);
   padding: 20px 10px;
   text-align: center;
 }
@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: rgb(27, 163, 122);
   text-decoration: none;
   font-weight: bold;
 }
@@ -47,7 +47,7 @@ main {
 }
 
 .curiosidade {
-  background-color: white;
+  background-color: rgb(137, 40, 194);
   margin-bottom: 20px;
   padding: 15px;
   border-left: 5px solid #0077cc;
@@ -62,7 +62,7 @@ main {
 
 footer {
   background-color: #333;
-  color: white;
+  color: rgb(168, 25, 25);
   text-align: center;
   padding: 15px;
   margin-top: 30px;
