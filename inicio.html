@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -16,7 +8,8 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      background-color: #1c1c1c; /* preto */
+      color: #dcdcdc; /* prata */
     }
     header {
       background-image: url('https://motor1.uol.com.br/images/mgl/590406/opel-chevrolet-astra-30anos-historia.jpg');
@@ -28,6 +21,7 @@
       justify-content: center;
       color: white;
       text-shadow: 2px 2px 4px #000;
+      border-bottom: 2px solid #00bfff; /* azul claro */
     }
     header h1 {
       font-size: 2.5em;
@@ -36,16 +30,32 @@
       padding: 20px;
       max-width: 800px;
       margin: auto;
-      background: white;
+      background-color: #2a2a2a; /* prata escuro */
+      border-radius: 8px;
     }
     h2 {
-      color: #333;
+      color: #00bfff;
     }
     ul {
       padding-left: 20px;
     }
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+      background-color: #333;
+      border-top: 2px solid #00bfff;
+    }
+    .galeria img {
+      width: 250px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
   </style>
-  
+</head>
+<body>
   <header>
     <h1>Chevrolet Astra: Uma Lenda das Estradas</h1>
   </header>
@@ -67,11 +77,10 @@
     </ul>
   </main>
 
-    <div class="galeria">
-      <img src="astra.jpg" alt="Astra GSi 2003" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Chevrolet_Astra_Sedan_2011_%28Flex%29.jpg" alt="Astra Sedan 2011" />
-      <img src="https://cdn.motor1.com/images/mgl/XzvXB/s3/opel-chevrolet-astra.jpg" alt="Opel Astra Europeu" />
-    </div>
-
+  <div class="galeria">
+    <img src="astra.jpg" alt="Astra GSi 2003" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Chevrolet_Astra_Sedan_2011_%28Flex%29.jpg" alt="Astra Sedan 2011" />
+    <img src="https://cdn.motor1.com/images/mgl/XzvXB/s3/opel-chevrolet-astra.jpg" alt="Opel Astra Europeu" />
+  </div>
 </body>
 </html>
