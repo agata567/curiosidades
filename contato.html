@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fale Conosco</title>
+  <title>Solicite uma Proposta</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #1c1c1c; /* fundo preto */
-      color: #dcdcdc; /* texto prata */
+      background-color: #1c1c1c;
+      color: #dcdcdc;
     }
 
     header {
-      background-color: #2a2a2a; /* prata escuro */
+      background-color: #2a2a2a;
       color: white;
       padding: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid #00bfff; /* azul claro */
+      border-bottom: 2px solid #00bfff;
     }
 
     header h1 {
@@ -46,7 +46,7 @@
     main {
       max-width: 600px;
       margin: 40px auto;
-      background-color: #2a2a2a; /* prata escuro */
+      background-color: #2a2a2a;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -59,7 +59,7 @@
       color: #00bfff;
     }
 
-    input, textarea {
+    input, select, textarea {
       width: 100%;
       padding: 10px;
       margin-bottom: 20px;
@@ -85,6 +85,25 @@
       background-color: #0090cc;
     }
 
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 30px;
+      background-color: #2a2a2a;
+      border-top: 2px solid #00bfff;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      border-radius: 10px;
+    }
+
+    .galeria img {
+      width: 250px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
     footer {
       background-color: #2a2a2a;
       text-align: center;
@@ -98,30 +117,53 @@
 
   <header>
     <a class="voltar" href="index.html">Voltar</a>
-    <h1>Fale Conosco📱</h1>
+    <h1>Solicite uma Proposta 🚗</h1>
     <div style="width: 90px;"></div>
   </header>
 
   <main>
     <form action="https://formspree.io/f/meokngge" method="post">
-      <label for="nome">Nome:</label>
+      <label for="nome">Nome completo:</label>
       <input type="text" id="nome" name="nome" required>
 
-      <label for="turma">Turma:</label>
-      <input type="text" id="turma" name="turma" required>
+      <label for="telefone">Telefone para contato:</label>
+      <input type="tel" id="telefone" name="telefone" required>
 
       <label for="email">E-mail:</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      <label for="modelo">Modelo de interesse:</label>
+      <select id="modelo" name="modelo" required>
+        <option value="">Selecione...</option>
+        <option value="Astra GSi">Astra GSi</option>
+        <option value="Astra Sedan">Astra Sedan</option>
+        <option value="Opel Astra Europeu">Opel Astra Europeu</option>
+        <option value="Outro">Outro</option>
+      </select>
 
-      <button type="submit">Enviar</button>
+      <label for="forma-pagamento">Forma de pagamento desejada:</label>
+      <select id="forma-pagamento" name="forma-pagamento" required>
+        <option value="">Selecione...</option>
+        <option value="À vista">À vista</option>
+        <option value="Financiamento">Financiamento</option>
+        <option value="Consórcio">Consórcio</option>
+      </select>
+
+      <label for="mensagem">Mensagem ou dúvidas:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui suas dúvidas ou observações..."></textarea>
+
+      <button type="submit">Solicitar Proposta</button>
     </form>
   </main>
 
+  <section class="galeria">
+    <img src="https://cdn.motor1.com/images/mgl/XzvXB/s3/opel-chevrolet-astra.jpg" alt="Opel Astra Europeu">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Chevrolet_Astra_Sedan_2011_%28Flex%29.jpg" alt="Astra Sedan 2011">
+    <img src="https://motor1.uol.com.br/images/mgl/590406/opel-chevrolet-astra-30anos-historia.jpg" alt="Astra GSi 2003">
+  </section>
+
   <footer>
-    &copy; 2025 - Todos os direitos reservados
+    &copy; 2025 - Concessionária Astra Motors
   </footer>
 
 </body>
