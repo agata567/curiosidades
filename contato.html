@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fale Conosco</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #1c1c1c; /* fundo preto */
+      color: #dcdcdc; /* texto prata */
+    }
+
+    header {
+      background-color: #2a2a2a; /* prata escuro */
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #00bfff; /* azul claro */
+    }
+
+    header h1 {
+      margin: 0 auto;
+      font-size: 24px;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .voltar {
+      background-color: #333;
+      color: #00bfff;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .voltar:hover {
+      background-color: #444;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #2a2a2a; /* prata escuro */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      color: #00bfff;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #00bfff;
+      background-color: #1c1c1c;
+      color: #dcdcdc;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #00bfff;
+      color: #1c1c1c;
+      padding: 12px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #0090cc;
+    }
+
+    footer {
+      background-color: #2a2a2a;
+      text-align: center;
+      padding: 10px;
+      border-top: 2px solid #00bfff;
+      color: #dcdcdc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="voltar" href="index.html">Voltar</a>
+    <h1>Fale Conosco📱</h1>
+    <div style="width: 90px;"></div>
+  </header>
+
+  <main>
+    <form action="https://formspree.io/f/meokngge" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="turma">Turma:</label>
+      <input type="text" id="turma" name="turma" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 - Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
